@@ -31,7 +31,7 @@ const Home = () => {
                     Description : <br /> {val.description}
                   </h4>
                 </Card.Text>
-                <Button variant="dark">Lire</Button>
+                <Button variant="dark">More</Button>
               </Card.Body>
             </Card>
           );

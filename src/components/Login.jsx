@@ -15,9 +15,9 @@ const Login = () => {
         console.log(data);
         if (data.error) setError(data.error);
         else {
+          window.location.href = "/admin";
           localStorage.setItem("token", data.token);
           localStorage.setItem("user", JSON.stringify(data.user));
-          window.location.href = "/";
         }
       });
     } else {
@@ -44,6 +44,7 @@ const Login = () => {
               name="email"
               id="email"
               value={email}
+              required="required"
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -57,6 +58,7 @@ const Login = () => {
               name="password"
               id="password"
               value={password}
+              required="required"
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>

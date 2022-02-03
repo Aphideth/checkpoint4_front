@@ -53,7 +53,7 @@ const App = () => {
           <BrowserRouter>
             <nav>
               <Link to="/" className="mx-3">
-                Home
+                Recipes
               </Link>
               <Link to="/contact" className="mx-3">
                 Contact
