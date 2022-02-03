@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const DashboardAdmin = () => {
   // useEffect(() => {
@@ -15,7 +15,7 @@ const DashboardAdmin = () => {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [description, setDescription] = useState("");
-  const [category, setCategory] = useState();
+  const [category, setCategory] = useState("");
   const [error, setError] = useState("");
   const formData = new FormData();
   // const config = {
@@ -39,7 +39,7 @@ const DashboardAdmin = () => {
             setName("");
             setImage("");
             setDescription("");
-            setCategory();
+            setCategory("");
           }
         });
       window.location.href = "/";
@@ -110,11 +110,7 @@ const DashboardAdmin = () => {
               </div>
 
               <div className="px-5 py-5 bg-white text-right sm:px-6">
-                <button
-                  type="submit"
-                  value="Send"
-                  className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
+                <button type="submit" value="Send">
                   Ajouter
                 </button>
               </div>
