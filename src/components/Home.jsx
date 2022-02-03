@@ -20,7 +20,7 @@ const Home = () => {
       <div className="d-flex flex-wrap justify-content-around p-sm">
         {recipesList.map((val, key) => {
           return (
-            <Card style={{ width: "20rem" }}>
+            <Card className="mb-4" style={{ width: "20rem" }}>
               <Card.Img variant="top" src={val.image} />
               <Card.Body>
                 <Card.Title>

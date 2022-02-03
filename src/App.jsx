@@ -62,7 +62,7 @@ const App = () => {
                 <>
                   {user && user.role === 1 && (
                     <Link to="admin" className="mx-3">
-                      Dashboard Admin
+                      Add recipe
                     </Link>
                   )}
                   <button
@@ -77,9 +77,9 @@ const App = () => {
                   <Link to="/login" className="mx-3">
                     Login
                   </Link>
-                  <Link to="/register" className="mx-3">
+                  {/* <Link to="/register" className="mx-3">
                     Register
-                  </Link>
+                  </Link> */}
                 </>
               )}
             </nav>
